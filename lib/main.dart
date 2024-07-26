@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             Text(
                               "follow 2.5m",
                               style: TextStyle(
-                                color: Colors.white,
+                                color: Color.fromARGB(255, 255, 255, 255),
                                 fontWeight: FontWeight.bold,
                                 fontSize: 15,
                               ),
