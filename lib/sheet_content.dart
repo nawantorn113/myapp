@@ -2,7 +2,8 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import "package:flutter/widgets.dart";
+// import "package:flutter/widgets.dart"; // ไม่จำเป็นต้อง import ซ้ำ
+import 'package:getwidget/getwidget.dart'; // ตรวจสอบว่าได้ติดตั้ง getwidget ใน pubspec.yaml
 
 class SheetContent extends StatefulWidget {
   const SheetContent({super.key});
@@ -13,6 +14,7 @@ class SheetContent extends StatefulWidget {
 
 class _SheetContentState extends State<SheetContent> {
   var items = List<String>.generate(50, (i) => 'List $i');
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,7 +37,4 @@ class _SheetContentState extends State<SheetContent> {
       ),
     );
   }
-  
-  // ignore: non_constant_identifier_names
-  GFListTile({required String titleText, required String subTitleText, required Icon icon}) {}
 }
