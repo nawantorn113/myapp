@@ -10,7 +10,7 @@ class MixPage extends StatefulWidget {
 }
 
 class _MixPageState extends State<MixPage> {
-  var items = List<String>.generate(20, (i) => 'สุดหล่อ $i');
+  var items = List<String>.generate(20, (i) => 'แพรว $i');
 
 
   @override
